@@ -2,6 +2,7 @@ import '@babel/polyfill';
 import Vue, { CreateElement, VNode, AsyncComponent } from 'vue';
 import VueMomentLib from 'vue-moment-lib';
 import './plugins/vuetify';
+import '@mdi/font/css/materialdesignicons.css'; // Ensure you are using css-loade
 
 const routes: {[index: string]: AsyncComponent} = {
   '/': () => import('./App.vue'),
